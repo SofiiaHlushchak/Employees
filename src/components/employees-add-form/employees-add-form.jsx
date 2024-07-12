@@ -12,9 +12,9 @@ class EmployeesAddForm extends Component {
 
     onValueChange = (e) => {
         this.setState({
-            [e.target.name]: e.target.value,
-        });
-    };
+            [e.target.name] : e.target.value
+        })
+    }
 
     render() {
         const { name, salary } = this.state;
@@ -27,8 +27,8 @@ class EmployeesAddForm extends Component {
                         className="form-control new-post-label"
                         placeholder="What's his name"
                         name="name"
-                        value={name}
-                        onClick={this.onValueChange}
+                        value={name} 
+                        onChange={this.onValueChange}
                     />
                     <input
                         type="number"
@@ -36,7 +36,7 @@ class EmployeesAddForm extends Component {
                         placeholder="Salary in $?"
                         name="salary"
                         value={salary}
-                        onClick={this.onValueChange}
+                        onChange={this.onValueChange}
                     />
 
                     <button type="submit" className="btn btn-outline-light">
