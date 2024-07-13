@@ -37,6 +37,7 @@ class EmployeesAddForm extends Component {
                         placeholder="What's his name"
                         name="name"
                         value={name}
+                        required
                         onChange={this.onValueChange}
                     />
                     <input
@@ -45,6 +46,7 @@ class EmployeesAddForm extends Component {
                         placeholder="Salary in $?"
                         name="salary"
                         value={salary}
+                        required
                         onChange={this.onValueChange}
                     />
 
